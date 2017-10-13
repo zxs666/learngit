@@ -1,4 +1,12 @@
 import numpy as np
-x=1
-y=0.5*x+1
-print y
+import matplotlib.pyplot as plt
+x = np.linspace(1,15,20)
+plt.subplot(2,2,1)
+plt.plot(x, np.sin(x), '-')
+plt.show()
+plt.subplot(2,2,2)
+plt.plot(x, np.cos(x), '-.')
+plt.axis([-1, 10,-1.5, 1.5,])
+plt.xlabel('x')
+plt.ylabel('cos')
+plt.show()
